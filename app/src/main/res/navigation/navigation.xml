@@ -9,5 +9,23 @@
         android:id="@+id/loginFragment"
         android:name="org.d3if0100.hilang_dan_temukan.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="org.d3if0100.hilang_dan_temukan.RegisterFragment"
+        android:label="fragment_register2"
+        tools:layout="@layout/fragment_register2" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/isiFragment"
+        android:name="org.d3if0100.hilang_dan_temukan.IsiFragment"
+        android:label="fragment_isi_list"
+        tools:layout="@layout/fragment_isi_list" />
 </navigation>
